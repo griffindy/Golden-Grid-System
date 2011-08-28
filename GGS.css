@@ -170,7 +170,7 @@ body {
 .normal, h3 {
   /* 16px / 24px */
 
-  font-size: 1em;
+  font-size: 1.2em;
   line-height: 1.5em;
   /* 24 */
 
@@ -207,7 +207,7 @@ body {
 *  5.55555% | %  25  50  75  100 | 5.55555%
 *
 */
-header, #twoway {
+header, #content {
   margin: 0 5.555555555555555%;
 }
 h1, h2 {
@@ -279,9 +279,12 @@ h3 {
   
     font-size: 1em;
   }
-  #twoway .wrapper {
+  #content .wrapper {
     float: left;
     width: 50%;
+  }
+  #content .wrapper:nth-of-type(2n+1) {
+    clear: left;
   }
 }
 /* @media screen and (min-width: 888px) */
@@ -299,7 +302,7 @@ h3 {
   
     font-size: 1em;
   }
-  header, #twoway {
+  header, #content {
     margin: 0 16.666666666666664%;
   }
 }
@@ -318,7 +321,7 @@ h3 {
   
     font-size: 1em;
   }
-  header, #twoway {
+  header, #content {
     margin: 0 27.77777777777778%;
   }
 }
@@ -341,17 +344,17 @@ h3 {
 */
 /* @media screen and (min-width: 1872px) */
 @media screen and (min-width: 117em) {
-  header, #twoway {
+  header, #content {
     margin: 0 5.555555555555555%;
   }
   header .wrapper {
     width: 37.5%;
     margin-left: 25%;
   }
-  #twoway .wrapper {
+  #content .wrapper {
     width: 25%;
   }
-  #twoway .wrapper:first-child {
+  #content .wrapper:first-child {
     margin-left: 25%;
   }
 }
